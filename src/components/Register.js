@@ -62,7 +62,7 @@ function Register() {
             name="grade"
             value={formData.grade}
             onChange={handleChange}
-            required
+            
           >
             <option value="">Select Grade</option>
             <option value="Prep">Hazırlık</option>
