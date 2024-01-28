@@ -1,11 +1,12 @@
 import React from 'react';
+import Button from './Button.js';
 import './contentBox.css'
 function ContentBox({ title, content }) {
   return (
     <div className="content-box">
       <h2>{title} </h2>
       <p>{content}</p>
-      <button type="submit" className="submit-button"  >Kolay Başvuru</button>
+      <Button text="Kolay Başvuru"/>
     </div>
   );
 }

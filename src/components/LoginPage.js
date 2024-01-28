@@ -4,6 +4,7 @@ import './Login.css'; // CSS dosyasını import et
 import './Register.js';
 import Circle from './circles.js';
 import './HomePage';
+import Button from './Button';
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -15,7 +16,7 @@ const Login = () => {
     console.log('Şifre:', password);
   };
   const handleLoginClick = () => {
-    nav('/HomePAge'); // '/login' rotasına yönlendirme yapılır
+    nav('/HomePage'); // '/HomaPage' rotasına yönlendirme yapılır
   };
 
   return (
@@ -42,7 +43,7 @@ const Login = () => {
               placeholder="Şifre"
             />
           </div>
-          <button type="submit" className="submit-button" onClick={handleLoginClick}  >Giriş Yap</button>
+          <Button text="Giriş Yap" action={handleLoginClick}/>
           <h3> Hala aramıza katılmadın mı?</h3> 
           <h3>
           <Link to="/Register">Hemen Üye Ol!</Link>
