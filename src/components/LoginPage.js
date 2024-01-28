@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Login.css'; // CSS dosyasını import et
 import './Register.js';
-
+import Circle from './circles.js';
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -43,10 +43,8 @@ const Login = () => {
           <Link to="/Register">Hemen Üye Ol!</Link>
           </h3>
         </form>
+        <Circle />
       </div>
-      
-      
-      
     </div>
   );
 };
