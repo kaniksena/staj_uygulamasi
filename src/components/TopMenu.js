@@ -9,7 +9,7 @@ import './SearchPage';
 function TopMenu() {
   return (
     <div className="top-menu">
-      <div className="menu-item">Anasayfa</div>
+      <div className="menu-item"><Link to="/HomePage">Anasayfa</Link></div>
       <div className="menu-item">Profilim</div>
       <div className="menu-item"> 
       <Link to="/Search">Arama</Link></div>

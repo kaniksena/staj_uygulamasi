@@ -8,9 +8,10 @@
     background-color: #2148C0 ;
   }
   .s-container {
+    width: 600px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center; /* Sayfayı yatayda ortalar */
+    align-items: center;
     align-items: flex-start;
     margin-bottom: 20px;
   }
