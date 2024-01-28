@@ -31,7 +31,7 @@ function Register() {
       <form className="register-form" onSubmit={handleSubmit}>
         <h2>Register</h2>
         <div className="form-group">
-          <label htmlFor="fullName">Full Name</label>
+          {/* <label htmlFor="fullName">Full Name</label> */}
           <input
             type="text"
             id="fullName"
@@ -39,10 +39,11 @@ function Register() {
             value={formData.fullName}
             onChange={handleChange}
             required
+            placeholder='İsim Soyisim*'
           />
         </div>
         <div className="form-group">
-          <label htmlFor="school">School</label>
+          {/* <label htmlFor="school">School</label> */}
           <input
             type="text"
             id="school"
@@ -50,10 +51,11 @@ function Register() {
             value={formData.school}
             onChange={handleChange}
             required
+            placeholder='Okul*'
           />
         </div>
         <div className="form-group">
-          <label htmlFor="grade">Grade</label>
+          {/* <label htmlFor="grade">Grade</label> */}
           <select
             id="grade"
             name="grade"
@@ -70,7 +72,7 @@ function Register() {
           </select>
         </div>
         <div className="form-group">
-          <label htmlFor="averageGrade">Average Grade</label>
+          {/* <label htmlFor="averageGrade">Average Grade</label> */}
           <input
             type="text"
             id="averageGrade"
@@ -78,10 +80,11 @@ function Register() {
             value={formData.averageGrade}
             onChange={handleChange}
             required
+            placeholder='Güncel Not Ortalaması'
           />
         </div>
         <div className="form-group">
-          <label htmlFor="tcIdentity">TC Identity</label>
+          {/* <label htmlFor="tcIdentity">TC Identity</label> */}
           <input
             type="text"
             id="tcIdentity"
@@ -89,19 +92,10 @@ function Register() {
             value={formData.tcIdentity}
             onChange={handleChange}
             required
+            placeholder='TC Kimlık No*'
           />
         </div>
-        <div className="form-group">
-          <label htmlFor="city">City</label>
-          <input
-            type="text"
-            id="city"
-            name="city"
-            value={formData.city}
-            onChange={handleChange}
-            required
-          />
-        </div>
+        <h3>* Zorunlu alanları lütfen eksiksiz doldurunuz.</h3>
         <button type="submit" className="submit-button">Register</button>
       </form>
     </div>
