@@ -4,19 +4,21 @@
     display: flex;
     justify-content: flex-end;
     align-items: right;
-    width: 100%; /* TopMenu'nun genişliğinin %80'ini kullanıyoruz */
-    padding: 10px 20px;
+    width: 100%; 
+    padding: 10px 0px;
     background-color: #b5caed;
   }
   
   .menu-item {
-    padding: 8px 5px;
-    margin: 10px ; /* Her menu-item'i en sağa hizalar */
+    padding: 3px 5px;
+    margin: 10px ; 
     cursor: pointer;
     transition: background-color 0.3s ease;
+    color: #1256cd;
+    text-decoration: underline;
   }
   
   .menu-item:hover {
-    background-color: #dcdcdc;
+    background-color: rgb(144, 170, 216);
   }
   
