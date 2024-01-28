@@ -4,7 +4,7 @@ import './Button.css'
 function Button({ text ,action}) {
   return (
     <div className="button">
-      <button type="submit" className="submit-button"  onClick={action}>
+      <button width= "100%" type="submit" className="submit-button"  onClick={action}>
         {text} </button>
     </div>
   );
