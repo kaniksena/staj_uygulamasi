@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Login.css'; // CSS dosyasını import et
+import './Register.js';
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -14,7 +16,8 @@ const Login = () => {
   return (
     <div className="login-container">
       <div className="login-form">
-        <h2>Login</h2>
+        <h2>Hoş Geldin!</h2>
+        <h3>Inanılmaz bir deneyim yaşamak için lütfen giriş yap.</h3>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <input
@@ -35,12 +38,15 @@ const Login = () => {
             />
           </div>
           <button type="submit" className="submit-button">Giriş Yap</button>
+          <h3> Hala aramıza katılmadın mı?</h3> 
+          <h3>
+          <Link to="/Register">Hemen Üye Ol!</Link>
+          </h3>
         </form>
       </div>
       
       
-      <div className="circles-container">
-      </div>
+      
     </div>
   );
 };

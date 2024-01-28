@@ -1,14 +1,16 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LoginPage from './components/LoginPage.js';
-
+import Register from './components/Register.js'
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <LoginPage />
-      </header>
-    </div>
+  return(
+  <Router>
+  <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/Register" element={<Register />} />
+  </Routes>
+</Router>
   );
 }
 
