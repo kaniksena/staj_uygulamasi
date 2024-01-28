@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import './Register.css';
-import Circle from '../components/circles.js';
+import Circle from '../cssFiles/circles.js';
 import { Link } from 'react-router-dom';
 
 function Register() {

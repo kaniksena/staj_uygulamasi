@@ -2,7 +2,7 @@ import React, { useState} from 'react';
 import { Link ,useNavigate} from 'react-router-dom';
 import './Login.css'; // CSS dosyasını import et
 import './Register.js';
-import Circle from '../components/circles.js';
+import Circle from '../cssFiles/circles.js';
 import './HomePage';
 const Login = () => {
   const [username, setUsername] = useState('');

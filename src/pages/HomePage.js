@@ -1,7 +1,7 @@
 // AnaSayfa.js
 
 import React from 'react';
-import TopMenu from './TopMenu';
+import TopMenu from '../components/TopMenu';
 import ContentBox from './ContentBox';
 import './homePage.css'
 
