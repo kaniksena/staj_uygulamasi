@@ -3,7 +3,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './topMenu.css';
-import './LoginPage.js'
+import '../pages/LoginPage.js'
 
 function TopMenu() {
   return (
