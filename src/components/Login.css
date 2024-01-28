@@ -46,21 +46,6 @@
     border: 1px solid #2148C0;
     border-radius: 5px;
   }
-  
-  .submit-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #6F8CE9;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .submit-button:hover {
-    background-color: #2148C0;
-  }
-  
   .circles-container {
     position: absolute;
     bottom: 0px; /* Dairelerin login konteynerına olan mesafesi */
