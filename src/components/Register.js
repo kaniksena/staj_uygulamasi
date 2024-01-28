@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import './Register.css';
+import Circle from './circles.js';
 
 function Register() {
   const [formData, setFormData] = useState({
@@ -98,6 +99,7 @@ function Register() {
         <h3>* Zorunlu alanları lütfen eksiksiz doldurunuz.</h3>
         <button type="submit" className="submit-button">Register</button>
       </form>
+      <Circle />
     </div>
   );
 }
