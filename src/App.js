@@ -5,6 +5,7 @@ import LoginPage from './components/LoginPage.js';
 import Register from './components/Register.js';
 import HomePage from "./components/HomePage.js";
 import Search from "./components/SearchPage.js";
+import Profile from "./components/profilePage.js"
 function App() {
   return(
   <Router>
@@ -13,6 +14,7 @@ function App() {
         <Route path="/Register" element={<Register />} />
         <Route path="/HomePage" element={<HomePage />} />
         <Route path="/Search" element={<Search />} />
+        <Route path="/Profile" element={<Profile />} />
 
   </Routes>
 </Router>

@@ -3,7 +3,7 @@
 .arama-container {
     width: 1458px;
     height: 900px;
-   
+    margin: 0 auto;
     /* padding: 20px; */
     background-color: #2148C0 ;
   }
@@ -14,6 +14,7 @@
     align-items: center;
     align-items: flex-start;
     margin-bottom: 20px;
+    height: 400px;
   }
   .arama-form {
     margin-bottom: 20px;
@@ -26,6 +27,5 @@
     border: 1px solid #ccc;
     border-radius: 5px;
   }
-  
 
   

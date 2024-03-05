@@ -1,0 +1,64 @@
+.anasayfa-container {
+    width: 1458px;
+    height: 900px;
+    margin: 0 auto;/* Sayfa ortalandı */
+    background-color: #2148C0;
+    justify-content: center; /* İçeriği yatay olarak ortala */
+    align-items: center; /* İçeriği dikey olarak ortala */
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column; /* İçerik sütun şeklinde düzenlendi */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #c4deee;
+    border-radius: 10px;
+    margin: 50px;
+    margin-top: 0;
+}
+
+.profile-info {
+    width: 70%;
+    margin-bottom: 20px; /* Aralarda boşluk bırakmak için */
+    text-align: center; /* Metin kutularını ortala */
+}
+
+.profile-info h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.profile-info label {
+    font-size: 16px;
+    color: #666;
+}
+
+.profile-info input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.bottom-button {
+    text-align: center;
+}
+
+.bottom-button button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.bottom-button button:hover {
+    background-color: #0056b3;
+}
