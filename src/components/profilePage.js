@@ -16,7 +16,7 @@ function ProfilePage() {
   return (
     <div className="anasayfa-container">
         <TopMenu/>
-        <Circle/>
+        <Circle/>  
       <div className="content-container">
         <div className="profile-info">
           <h2>Profil Bilgileri</h2>
@@ -93,7 +93,6 @@ function ProfilePage() {
             <button>Profili Kaydet</button>
             </div>
       </div>
-     
     </div>
   );
 }
