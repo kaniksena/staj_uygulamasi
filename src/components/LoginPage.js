@@ -55,7 +55,7 @@ const Login = () => {
               placeholder="Şifre"
             />
           </div>
-          <Button text="Giriş Yap" action={handleSubmit}/>
+          <Button text="Giriş Yap" action={   handleLoginClick}/>
           <h3> Hala aramıza katılmadın mı?</h3> 
           <h3>
           <Link to="/Register">Hemen Üye Ol!</Link>
@@ -66,5 +66,6 @@ const Login = () => {
     </div>
   );
 };
+
 
 export default Login;
