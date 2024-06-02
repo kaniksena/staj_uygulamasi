@@ -5,15 +5,27 @@ import './Register.js';
 import Circle from './circles.js';
 import './HomePage';
 import Button from './Button';
+import axios from 'axios';
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const nav= useNavigate();
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log('Kullanıcı adı:', username);
-    console.log('Şifre:', password);
+        
+    try {
+        // Kullanıcı bilgilerini sunucuya POST isteği ile gönder
+        const response = await axios.post('/api/login', {
+            username,
+            password
+        });
+
+        console.log(response.data); // Sunucudan gelen cevabı konsola yazdır
+        nav('/HomePage');
+    } catch (error) {
+        console.error('Giriş hatası:', error);
+    }
   };
   const handleLoginClick = () => {
     nav('/HomePage'); // '/HomaPage' rotasına yönlendirme yapılır
@@ -43,7 +55,7 @@ const Login = () => {
               placeholder="Şifre"
             />
           </div>
-          <Button text="Giriş Yap" action={handleLoginClick}/>
+          <Button text="Giriş Yap" action={   handleLoginClick}/>
           <h3> Hala aramıza katılmadın mı?</h3> 
           <h3>
           <Link to="/Register">Hemen Üye Ol!</Link>
@@ -54,5 +66,6 @@ const Login = () => {
     </div>
   );
 };
+
 
 export default Login;
